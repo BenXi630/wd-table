@@ -1,24 +1,25 @@
 # wd-table
 
-## Project setup
+## Install
 ```
-yarn install
-```
-
-### Compiles and hot-reloads for development
-```
-yarn serve
+yarn add wd-table
 ```
 
-### Compiles and minifies for production
+### Quick Start
 ```
-yarn build
-```
+import Vue from 'vue'
+import WdTable from 'wd-table'
+import "wd-table/dist/wd-table.css"
 
-### Lints and fixes files
-```
-yarn lint
-```
+Vue.use(WdTable)
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+// or
+import {
+  TableGroup,
+  Table
+  // ...
+} from 'wd-table'
+
+Vue.component(TableGroup.name, TableGroup)
+Vue.component(Table.name, Table)
+```
